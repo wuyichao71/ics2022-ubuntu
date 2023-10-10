@@ -16,6 +16,13 @@
 #include <isa.h>
 #include <memory/paddr.h>
 
+// wuyc
+#ifdef CONFIG_FTRACE
+char *strtab = NULL;
+Func_Hdr *func_hdr = NULL;
+word_t func_num = 0;
+#endif
+
 void init_rand();
 void init_log(const char *log_file);
 void init_mem();
