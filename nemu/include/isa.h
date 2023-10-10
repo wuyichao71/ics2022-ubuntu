@@ -32,15 +32,15 @@ extern char isa_logo[];
 void init_isa();
 /* wuyc */
 #ifdef CONFIG_FTRACE
-extern char *strtab;
+char *strtab;
 typedef struct
 {
   word_t st_name;
   word_t st_value;
   word_t st_size;
 } Func_Hdr;
-extern Func_Hdr *func_hdr;
-extern word_t func_num;
+Func_Hdr *func_hdr;
+word_t func_num;
 #endif
 /* wuyc */
 
